@@ -13,4 +13,5 @@ maruku:
 exclude:
   - config.rb
   - README.markdown
+  - _sass
 

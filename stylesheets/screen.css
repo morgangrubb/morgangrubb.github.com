@@ -87,25 +87,37 @@ caption { background: #eee; }
 
 .loud { color: #383b48; }
 
+h1, h2, h3, h4, h5 { font-family: Georgia, serif; }
+
 body { background-color: #f3f4f5; }
 body #container { width: 800px; margin-left: auto; margin-right: auto; overflow: hidden; display: inline-block; }
 body #container { display: block; }
 body #container a { text-decoration: none; color: #ffa200; }
 body #container a:hover { text-decoration: underline; }
-body #header h2 { margin: 0 0 0 10px; }
-body #header h2 a { font-family: Arial Black, sans-serif; font-size: 250%; line-height: 100%; text-decoration: none; color: #5a5d6a; }
-body #header h2 a, body #header h2 a:visited { text-shadow: #7babf7 0px 0px 5px; }
-body #header h2 a:hover { color: #5a5d6a; text-shadow: #ffd07e 0px 0px 5px; text-decoration: none; }
-body #header h2 a:active { text-shadow: #ff9b7e 0px 0px 5px; }
-body #header h2 a:focus { text-shadow: #ffa200 0px 0px 5px; }
-body #main { overflow: hidden; display: inline-block; border: 1px solid #e2e3e4; background-color: white; border-radius: 9px; padding: 10px; }
+body #header { position: relative; z-index: 0; }
+body #header a#title { position: relative; top: 8px; margin: 0 0 0 7px; font: 5em Arial, sans-serif; line-height: 100%; text-decoration: none; color: #5a5d6a; }
+body #header a#title span { position: relative; top: -14px; }
+body #header a#title, body #header a#title:visited { text-shadow: #7babf7 0px 0px 5px; }
+body #header a#title:hover { color: #5a5d6a; text-shadow: #ffd07e 0px 0px 5px; text-decoration: none; }
+body #header a#title:active { text-shadow: #ff9b7e 0px 0px 5px; }
+body #header a#title:focus { text-shadow: #ffa200 0px 0px 5px; }
+body #header #menu { margin: 0; padding: 0; border: 0; outline: 0; overflow: hidden; display: inline-block; position: absolute; bottom: 9px; right: 9px; }
+body #header #menu { display: block; }
+body #header #menu li { list-style-type: none; margin-left: 0px; white-space: nowrap; display: inline; float: left; padding-left: 4px; padding-right: 4px; }
+body #header #menu li.first { padding-left: 0px; }
+body #header #menu li.last { padding-right: 0px; }
+body #header #menu a { display: block; border: 1px solid #f3f4f5; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; padding: 1px 6px; color: #c0c3d0; font-weight: bold; }
+body #header #menu a:hover, body #header #menu a:active { color: white; text-decoration: none; background-color: #5a5d6a; }
+body #header #menu a:hover { background-color: #ffa200; border-color: #ffa200; }
+body #header #menu a:active { background-color: #ffbc46; border-color: #ffbc46; }
+body #main { position: relative; z-index: 1; overflow: hidden; display: inline-block; border: 1px solid #e2e3e4; background-color: white; border-radius: 9px; -moz-border-radius: 9px; -webkit-border-radius: 9px; padding: 10px; }
 body #main { display: block; }
 body #content .post { border-bottom: 1px solid #c0c1c2; padding-bottom: 1em; margin-bottom: 1em; }
-body #content .post .title h3 { font-family: Georgia, serif; line-height: 125%; margin-bottom: 10px; }
-body #content .post .title h3 a { color: #5a5d6a; }
-body #content .post .title h3 a:hover { color: #ffa200; text-decoration: none; }
+body #content .post .title h2 { font-family: Georgia, serif; line-height: 125%; margin-bottom: 10px; }
+body #content .post .title h2 a { color: #5a5d6a; }
+body #content .post .title h2 a:hover { color: #ffa200; text-decoration: none; }
 body #content .post .date { font-family: Georgia, serif; font-style: italic; text-align: right; }
 body #content .post:last-child { border: none; padding-bottom: 0; margin-bottom: 0; }
-body #footer { overflow: hidden; display: inline-block; margin-top: 1em; padding: 10px; border: 1px solid #e2e3e4; border-radius: 9px; background-color: white; font-family: Georgia, serif; font-style: italic; }
+body #footer { overflow: hidden; display: inline-block; margin-top: 1em; padding: 10px; border: 1px solid #e2e3e4; border-radius: 9px; -moz-border-radius: 9px; -webkit-border-radius: 9px; background-color: white; font-family: Georgia, serif; font-style: italic; }
 body #footer { display: block; }
 body #footer .copy { float: right; }
