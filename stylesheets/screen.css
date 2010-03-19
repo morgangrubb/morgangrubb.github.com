@@ -121,3 +121,5 @@ body #content .post:last-child { border: none; padding-bottom: 0; margin-bottom:
 body #footer { overflow: hidden; display: inline-block; margin-top: 1em; padding: 10px; border: 1px solid #e2e3e4; border-radius: 9px; -moz-border-radius: 9px; -webkit-border-radius: 9px; background-color: white; font-family: Georgia, serif; font-style: italic; }
 body #footer { display: block; }
 body #footer .copy { float: right; }
+
+.highlight pre { padding: 5px; background-color: #232323; }

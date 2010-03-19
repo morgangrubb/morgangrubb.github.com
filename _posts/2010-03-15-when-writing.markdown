@@ -17,10 +17,6 @@ So Jorge figured out a solution involving creating modules on the fly in order t
 # Allows for easily chaining assignment of methods that use method_missing for assignment
 # such as attributes on ActiveRecord objects.
 #
-# Be sure to call super or shit won't work.
-#
-# It's just a sugared version of Jorge's idea.
-#
 # Usage:
 #
 # class Comment < ActiveRecord::Base
@@ -51,5 +47,5 @@ module WhenWriting
 end
 {% endhighlight %}
 
-This is a handy tool to have lying around for when a plugin has done something weird to your models and chaing accessors with super breaks.
+This is a handy tool to have lying around for when a plugin has done something weird to your models and chaining accessors with super breaks.
 
