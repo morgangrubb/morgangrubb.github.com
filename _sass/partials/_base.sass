@@ -1,0 +1,77 @@
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+@import compass/utilities.sass
+
+// Not quite black
+!font_color = #5A5D6A
+
+!background_color = #F3F4F5
+
+!blueprint_font_size = 14px
+
+!spacer = 10px
+
+!light_border = !background_color - #111
+!dark_border = !background_color - #333
+
+// Colours provided by randomly picking on colorschemedesigner.com
+// Saved in the gpl file
+!primary_1 = #ffa200
+!primary_2 = #e99c14
+!primary_3 = #e08f00
+!primary_4 = #ffbc46
+!primary_5 = #ffd07e
+!secondary_a_1 = #ffdf00
+!secondary_a_2 = #e9cf14
+!secondary_a_3 = #e0c400
+!secondary_a_4 = #ffe846
+!secondary_a_5 = #ffef7e
+!secondary_b_1 = #ff3900
+!secondary_b_2 = #e94414
+!secondary_b_3 = #e03200
+!secondary_b_4 = #ff7046
+!secondary_b_5 = #ff9b7e
+!complement_1 = #035dec
+!complement_2 = #1560d8
+!complement_3 = #0251d0
+!complement_4 = #468af7
+!complement_5 = #7babf7
+
+// Here is a basic script for converting them
+  str = <<-EOS
+    255 162   0     primary 1
+    233 156  20     primary 2
+    224 143   0     primary 3
+    255 188  70     primary 4
+    255 208 126     primary 5
+    255 223   0     secondary-a 1
+    233 207  20     secondary-a 2
+    224 196   0     secondary-a 3
+    255 232  70     secondary-a 4
+    255 239 126     secondary-a 5
+    255  57   0     secondary-b 1
+    233  68  20     secondary-b 2
+    224  50   0     secondary-b 3
+    255 112  70     secondary-b 4
+    255 155 126     secondary-b 5
+      3  93 236     complement 1
+     21  96 216     complement 2
+      2  81 208     complement 3
+     70 138 247     complement 4
+    123 171 247     complement 5
+  EOS
+
+  class Fixnum
+    def to_rgb_part
+      self.to_s(16).rjust(2, '0')
+    end
+  end
+
+  str.split(/\n/).collect do |line|
+    if line =~ /\s*([0-9]+)\s+([0-9]+)\s+([0-9]+)\s+(.*)$/
+      red, blue, green, name = $1.to_i, $2.to_i, $3.to_i, $4
+      puts "!#{name.gsub(/[^a-z0-9]+/, '_')} = \##{red.to_rgb_part}#{blue.to_rgb_part}#{green.to_rgb_part}"
+    end  
+  end
+

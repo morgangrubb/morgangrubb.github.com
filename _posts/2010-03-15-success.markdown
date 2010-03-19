@@ -1,0 +1,13 @@
+---
+layout: post
+title: Success!
+keywords: blog, blogging, website, meta, cms, writing
+description: This 'ere be me blog.
+---
+
+Thought I'd try a little bloggin' and this here is where I thought I'd do it. When I get time I'll add more blog-like features to this site but I'm working from the principles of The Simplest Possible Thing That Works and YAGNI so they won't happen until I want them to.
+
+I'd like to keep this blog fairly general and post about my travels, photography, singing and dancing and work related stuff. I'll probably use it as a dumping ground for things I want to remember as well but I'll tag those up and hide them away.
+
+*[YAGNI]: You Ain't Gonna Need It
+

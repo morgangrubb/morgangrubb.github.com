@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+  <head> 
+    <title>{{ page.title || "Backlit - I be bloggin' 'ere"}}</title> 
+    <meta name="keywords" content="{{ page.keywords }}, Morgan Grubb, Miggles, Ruby on Rails, Ruby, Ceroc">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="copyright" content="(c) copyright Morgan Grubb">
+    <meta name="author" content="Morgan Grubb">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en-GB">
+    <meta name="robots" content="index, follow">
+ 
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> 
+    <!--[if lt IE 8]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]--> 
+  </head> 
+  <body> 
+    <div id='container'> 
+      <div id='header'> 
+        <h2> 
+          <a href="/">Backlit</a> 
+        </h2> 
+      </div> 
+      <div id='main'> 
+        <div id='content'> 
+          {{ content }}
+        </div> 
+      </div> 
+      <div id='footer'> 
+        This is the blog of
+        <script type="text/javascript">eval(decodeURIComponent('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%6d%69%67%67%6c%65%73%40%67%6d%61%69%6c%2e%63%6f%6d%22%3e%4d%6f%72%67%61%6e%20%47%72%75%62%62%3c%2f%61%3e%27%29%3b'))</script>,
+        a singing and dancing Ruby on Rails developer in Madrid.
+        <div class='copy'> 
+          &copy; 2010
+        </div> 
+      </div> 
+    </div> 
+  </body> 
+</html> 

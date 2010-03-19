@@ -1,0 +1,96 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset.sass
+// To configure blueprint, edit the partials/base.sass file.
+@import partials/base.sass
+@import blueprint
+
+=body-box
+  width: 800px
+  margin-left: auto
+  margin-right: auto
+  +clearfix
+
+//Recommended Blueprint configuration with scoping and semantic layout:
++blueprint-typography("body")
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body
+  background:
+    color = !background_color
+
+  #container
+    +body-box
+    a
+      +hover-link
+      color = !primary_1
+
+  #header
+    h2
+      margin = 0 0 0 !spacer
+      a
+        font-family: Arial Black, sans-serif
+        font-size: 250%
+        line-height: 100%
+        text-decoration: none
+        color = !font_color
+
+      a, a:visited
+        text-shadow = !complement_5 0px 0px 5px
+      
+      a
+        &:hover
+          color = !font_color
+          text-shadow = !primary_5 0px 0px 5px
+          text-decoration: none
+        &:active
+          text-shadow = !secondary_b_5 0px 0px 5px
+        &:focus
+          text-shadow = !primary_1 0px 0px 5px
+
+  
+  #main
+    +clearfix
+    border = 1px "solid" !light_border
+    background-color: white
+    border-radius = !spacer - 1
+    padding = !spacer
+  
+  #content      
+    .post
+      border-bottom = 1px "solid" !dark_border
+      padding-bottom: 1em
+      margin-bottom: 1em
+      .title
+        h3
+          font-family: Georgia, serif
+          line-height: 125%
+          margin-bottom = !spacer
+          a
+            color = !font_color
+            &:hover
+              color = !primary_1
+              text-decoration: none
+
+      .date
+        font-family: Georgia, serif
+        font-style: italic
+        text-align: right
+
+    .post:last-child
+      border: none
+      padding-bottom: 0
+      margin-bottom: 0
+     
+  #footer
+    +clearfix
+    margin-top: 1em
+    padding = !spacer
+    border = 1px "solid" !light_border
+    border-radius = !spacer - 1px
+    background-color: white
+    font-family: Georgia, serif
+    font-style: italic
+    
+    .copy
+      float: right
+

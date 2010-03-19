@@ -1,0 +1,111 @@
+html, body { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+blockquote, q { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; quotes: "" ""; }
+blockquote:before, q:before, blockquote:after, q:after { content: ""; }
+
+th, td, caption { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; text-align: left; font-weight: normal; vertical-align: middle; }
+
+table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+a img { border: none; }
+
+body { line-height: 1.5; font-family: Helvetica Neue, Arial, Helvetica, sans-serif; color: #5a5d6a; font-size: 87.5%; }
+
+h1 { font-weight: normal; color: #494c59; font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+h1 img { margin: 0; }
+
+h2 { font-weight: normal; color: #494c59; font-size: 2em; margin-bottom: 0.75em; }
+
+h3 { font-weight: normal; color: #494c59; font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+
+h4 { font-weight: normal; color: #494c59; font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+
+h5 { font-weight: normal; color: #494c59; font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+
+h6 { font-weight: normal; color: #494c59; font-size: 1em; font-weight: bold; }
+
+h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
+
+p { margin: 0 0 1.5em; }
+p img.left { display: inline; float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+p img.right { display: inline; float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+
+a { text-decoration: underline; color: #000099; }
+a:visited { color: #000066; }
+a:focus { color: black; }
+a:hover { color: black; }
+a:active { color: #cc0099; }
+
+blockquote { margin: 1.5em; color: #666; font-style: italic; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+dfn { font-style: italic; font-weight: bold; }
+
+sup, sub { line-height: 0; }
+
+abbr, acronym { border-bottom: 1px dotted #666; }
+
+address { margin: 0 0 1.5em; font-style: italic; }
+
+del { color: #666; }
+
+pre { margin: 1.5em 0; white-space: pre; }
+
+pre, code, tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5; }
+
+li ul, li ol { margin: 0 1.5em; }
+
+ul { margin: 0 1.5em 1.5em 1.5em; list-style-type: disc; }
+
+ol { margin: 0 1.5em 1.5em 1.5em; list-style-type: decimal; }
+
+dl { margin: 0 0 1.5em 0; }
+dl dt { font-weight: bold; }
+
+dd { margin-left: 1.5em; }
+
+table { margin-bottom: 1.4em; width: 100%; }
+
+th { font-weight: bold; }
+
+thead th { background: #c3d9ff; }
+
+th, td, caption { padding: 4px 10px 4px 5px; }
+
+tr.even td { background: #e5ecf9; }
+
+tfoot { font-style: italic; }
+
+caption { background: #eee; }
+
+.quiet { color: #8d909d; }
+
+.loud { color: #383b48; }
+
+body { background-color: #f3f4f5; }
+body #container { width: 800px; margin-left: auto; margin-right: auto; overflow: hidden; display: inline-block; }
+body #container { display: block; }
+body #container a { text-decoration: none; color: #ffa200; }
+body #container a:hover { text-decoration: underline; }
+body #header h2 { margin: 0 0 0 10px; }
+body #header h2 a { font-family: Arial Black, sans-serif; font-size: 250%; line-height: 100%; text-decoration: none; color: #5a5d6a; }
+body #header h2 a, body #header h2 a:visited { text-shadow: #7babf7 0px 0px 5px; }
+body #header h2 a:hover { color: #5a5d6a; text-shadow: #ffd07e 0px 0px 5px; text-decoration: none; }
+body #header h2 a:active { text-shadow: #ff9b7e 0px 0px 5px; }
+body #header h2 a:focus { text-shadow: #ffa200 0px 0px 5px; }
+body #main { overflow: hidden; display: inline-block; border: 1px solid #e2e3e4; background-color: white; border-radius: 9px; padding: 10px; }
+body #main { display: block; }
+body #content .post { border-bottom: 1px solid #c0c1c2; padding-bottom: 1em; margin-bottom: 1em; }
+body #content .post .title h3 { font-family: Georgia, serif; line-height: 125%; margin-bottom: 10px; }
+body #content .post .title h3 a { color: #5a5d6a; }
+body #content .post .title h3 a:hover { color: #ffa200; text-decoration: none; }
+body #content .post .date { font-family: Georgia, serif; font-style: italic; text-align: right; }
+body #content .post:last-child { border: none; padding-bottom: 0; margin-bottom: 0; }
+body #footer { overflow: hidden; display: inline-block; margin-top: 1em; padding: 10px; border: 1px solid #e2e3e4; border-radius: 9px; background-color: white; font-family: Georgia, serif; font-style: italic; }
+body #footer { display: block; }
+body #footer .copy { float: right; }
