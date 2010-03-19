@@ -12,3 +12,5 @@ maruku:
   png_url:    /images/latex
 exclude:
   - config.rb
+  - README
+
