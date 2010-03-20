@@ -40,6 +40,6 @@ mail("awesome@sofarsogood.co.nz", "Blog updated - {$retval}", ob_get_clean());
 ob_end_clean();
 
 ?>
-{% endhighlighting %}
+{% endhighlight %}
 
 
