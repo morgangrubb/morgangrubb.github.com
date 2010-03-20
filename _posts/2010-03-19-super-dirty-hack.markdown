@@ -45,18 +45,17 @@ If anyone is interested, this is the Metal class:
 
 {% highlight ruby %}
 require 'open-uri'
-require 'pathname'
 
 class Fetch
   def self.call(env)
 
     if env["PATH_INFO"] =~ /reset_pages/
       Resource.destroy_all
-      file = "index.html"
-    else
-      file = (env["PATH_INFO"] || "/")[1..-1]
-      file = "index.html" if file.blank?
+      return [200, {"Content-Type" => "text/plain" }, "All good"]
     end
+
+    file = (env["PATH_INFO"] || "/")[1..-1]
+    file = "index.html" if file.blank?
 
     object = Resource.find_by_name file
     if object
